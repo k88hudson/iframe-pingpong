@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pingpong test</title>
+</head>
+<body>
+    <iframe id="child" src="http://localhost:1990"></iframe>
+    <script src="./index.js"></script>
+    <script>
+    var iframe = document.getElementById('child');
+    var pingpong = new PingPong({
+        dev: true,
+        remoteWindow: iframe.contentWindow,
+        remoteOrigin: 'http://localhost:1990'
+    });
+    pingpong.ping(function () {
+        console.log('do some stuff');
+    });
+    </script>
+</body>
+</html>

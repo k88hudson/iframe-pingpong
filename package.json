@@ -1,0 +1,15 @@
+{
+  "name": "iframe-pingpong",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp demo"
+  },
+  "author": "@k88hudson",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-webserver": "^0.9.0"
+  }
+}
