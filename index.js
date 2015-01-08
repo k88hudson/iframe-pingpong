@@ -2,7 +2,7 @@
     if (typeof exports === 'object') {
         module.exports = factory();
     } else {
-        root.PingPong = factory();
+        root.Pingpong = factory();
     }
 }(this, function () {
     function Pingpong(options) {
